@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.org.controlador.ControladorValidezVenn">
+   <children>
+      <Rectangle id="c" fx:id="C" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="728.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle id="a" fx:id="A" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="659.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle id="b" fx:id="B" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="796.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle id="ac" fx:id="AC" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="728.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
+      <Rectangle id="abc" fx:id="ABC" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="797.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+      <Rectangle id="bc" fx:id="BC" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="859.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
+      <Rectangle id="ab" fx:id="AB" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="797.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="63.0" />
+      <Label fx:id="TerminoA" alignment="CENTER" layoutX="578.0" layoutY="116.0" prefHeight="50.0" prefWidth="149.0" text="A" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TerminoB" alignment="CENTER" layoutX="929.0" layoutY="116.0" prefHeight="50.0" prefWidth="149.0" text="B" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="TerminoC" alignment="CENTER" layoutX="753.0" layoutY="467.0" prefHeight="50.0" prefWidth="149.0" text="C" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XC" alignment="CENTER" layoutX="811.0" layoutY="403.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XAC" alignment="CENTER" layoutX="745.0" layoutY="303.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XBC" alignment="CENTER" layoutX="876.0" layoutY="303.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XA" alignment="CENTER" layoutX="692.0" layoutY="203.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XAB" alignment="CENTER" layoutX="810.0" layoutY="203.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="XB" alignment="CENTER" layoutX="929.0" layoutY="203.0" prefHeight="21.0" prefWidth="36.0" text="X" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="139.0" prefHeight="50.0" prefWidth="352.0" text="Reglas de los silogismos" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label id="uno" fx:id="ReglaUno" layoutX="25.0" layoutY="191.0" prefHeight="30.0" prefWidth="561.0" text="1. Todo Silogismo, debe tener únicamente tres términos: Mayor, Medio y Menor. " textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="dos" fx:id="ReglaDos" layoutX="25.0" layoutY="209.0" prefHeight="30.0" prefWidth="526.0" text="2. El Término MEDIO, nunca aparece en la Conclusión." textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="tres" fx:id="ReglaTres" layoutX="25.0" layoutY="226.0" prefHeight="30.0" prefWidth="526.0" text="3. El Término (concepto), debe tomarse en toda su extensión en el silogismo," textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="tres1" fx:id="ReglaTres_1" layoutX="25.0" layoutY="241.0" prefHeight="30.0" prefWidth="526.0" text="   por lo menos, una vez." textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="cuatro" fx:id="ReglaCuatro" layoutX="25.0" layoutY="262.0" prefHeight="30.0" prefWidth="574.0" text="4. Los Términos (conceptos), Mayor y Menor, NO deben aparecer en la conclusión," textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="cuatro1" fx:id="ReglaCuatro_1" layoutX="25.0" layoutY="279.0" prefHeight="30.0" prefWidth="526.0" text="   con mayor extensión, que con las que aparecen en las Premisas." textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="cinco" fx:id="ReglaCinco" layoutX="25.0" layoutY="297.0" prefHeight="30.0" prefWidth="574.0" text="5. De dos premisas afirmativas, NO se puede inferir una conclusión negativa." textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="seis" fx:id="ReglaSeis" layoutX="25.0" layoutY="314.0" prefHeight="30.0" prefWidth="574.0" text="6. Si las premisas del silogismo son negativas, NO puede inferirse una conclusión." textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="siete" fx:id="ReglaSiete" layoutX="25.0" layoutY="332.0" prefHeight="30.0" prefWidth="574.0" text="7. Si una de las premisas es negativa, la conclusión será negativa, si es particular, " textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="siete1" fx:id="ReglaSiete_1" layoutX="25.0" layoutY="350.0" prefHeight="29.0" prefWidth="366.0" text="   la conclusión será particular. " textAlignment="CENTER" textFill="#3e7731" />
+      <Label id="ocho" fx:id="ReglaOcho" layoutX="25.0" layoutY="364.0" prefHeight="30.0" prefWidth="526.0" text="8. término medio debe estar distribuido por lo menos una vez." textAlignment="CENTER" textFill="#3e7731" />
+      <Button id="volver" layoutX="452.0" layoutY="646.0" mnemonicParsing="false" onAction="#volver" prefHeight="44.0" prefWidth="175.0" text="Volver">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="376.0" layoutY="35.0" prefHeight="50.0" prefWidth="352.0" text="SLOGISMO CATEGORICO" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="442.0" prefHeight="50.0" prefWidth="70.0" text="Figura" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Figura" alignment="CENTER" layoutX="241.0" layoutY="453.0" prefHeight="27.0" prefWidth="70.0" text="X" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="492.0" prefHeight="50.0" prefWidth="70.0" text="Modo" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Modo" alignment="CENTER" layoutX="241.0" layoutY="503.0" prefHeight="27.0" prefWidth="70.0" text="X" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="validez" alignment="CENTER" layoutX="435.0" layoutY="553.0" prefHeight="27.0" prefWidth="210.0" text="X" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
